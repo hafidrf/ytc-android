@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSnow">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:theme="@style/ToolbarColoredBackArrow"
+                app:titleTextColor="@color/colorOnPrimary">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            app:layout_constraintBottom_toTopOf="@id/v_action">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:paddingVertical="5sp"
+                    android:text="Lengkapi data dirimu di bawah ini"
+                    android:textColor="@color/colorLabelAccount"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_name_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:paddingVertical="5sp"
+                    android:text="@string/tv_edit_profile_name"
+                    android:textColor="@color/colorLabelAccount"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_sign_up" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ed_name_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@drawable/rounded_edit_profile"
+                    android:hint="@string/ed_edit_profile_name"
+                    android:inputType="text"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:textColor="@color/colorInputAccountPrimary"
+                    android:textColorHint="@color/colorInputAccount"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_name_sign_up" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_email_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:paddingVertical="5sp"
+                    android:text="@string/tv_edit_profile_email"
+                    android:textColor="@color/colorLabelAccount"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/ed_name_sign_up" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ed_email_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@drawable/rounded_edit_profile"
+                    android:hint="@string/ed_edit_profile_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:textColor="@color/colorInputAccountPrimary"
+                    android:textColorHint="@color/colorInputAccount"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_email_sign_up" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_notValid_signUp_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    app:layout_constraintTop_toBottomOf="@id/ed_email_sign_up"
+                    android:text="@string/tv_signUp_notValid_email"
+                    android:textColor="@color/colorBackgroundAccountDanger"
+                    android:textSize="@dimen/_11ssp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_password_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:paddingVertical="5sp"
+                    android:text="@string/tv_edit_profile_password"
+                    android:textColor="@color/colorLabelAccount"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_notValid_signUp_email" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ed_password_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@drawable/rounded_edit_profile"
+                    android:hint="min, 6 karakter"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:textColor="@color/colorInputAccountPrimary"
+                    android:textColorHint="@color/colorInputAccount"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_password_sign_up" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_notValid_signUp_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    app:layout_constraintTop_toBottomOf="@id/ed_password_sign_up"
+                    android:text="@string/label_notValid_signUp_password"
+                    android:textColor="@color/colorBackgroundAccountDanger"
+                    android:textSize="@dimen/_11ssp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_phone_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:paddingVertical="5sp"
+                    android:text="@string/tv_edit_profile_phone"
+                    android:textColor="@color/colorLabelAccount"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_notValid_signUp_password" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ed_phone_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@drawable/rounded_edit_profile"
+                    android:hint="@string/ed_edit_profile_phone"
+                    android:inputType="phone"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:textColor="@color/colorInputAccountPrimary"
+                    android:textColorHint="@color/colorInputAccount"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_phone_sign_up" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_usia_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5sp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:layout_constraintTop_toBottomOf="@id/ed_phone_sign_up"
+                    android:text="@string/tv_edit_profile_usia"
+                    android:textColor="@color/colorLabelAccount"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ed_usia_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@drawable/rounded_edit_profile"
+                    android:hint="6"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_usia_sign_up"
+                    android:textColor="@color/colorInputAccountPrimary"
+                    android:textColorHint="@color/colorInputAccount"
+                    android:inputType="number"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <FrameLayout
+            android:id="@+id/v_action"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/colorSnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_20sdp">
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:visibility="gone"
+                android:indeterminateTint="@color/colorPrimary"
+                android:elevation="@dimen/_12sdp"
+                android:outlineProvider="none"/>
+
+            <com.yureka.technology.ytc.util.android.FButton
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36sdp"
+                android:text="Selanjutnya"
+                android:textAllCaps="false"
+                android:enabled="false"
+                android:fontFamily="@font/nunito_black"
+                android:textColor="@color/exo_white"
+                app:buttonColor="@color/colorPrimary"
+                app:cornerRadius="@dimen/_20sdp" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

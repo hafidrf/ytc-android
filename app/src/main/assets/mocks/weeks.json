@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "message": "success",
+  "validation": {},
+  "data": {
+    "weeks": [
+      {
+        "id": "5fad450743f577450ecf0835",
+        "image": "https://image.google.com",
+        "title": "Minggu 1",
+        "caption": "caption 1",
+        "video": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4",
+        "topic": "Greeting and Parting",
+        "desc": "Greeting and Parting (Salam dan Perpisahan) adalah ungkapan untuk memberi salam atau mengucapkan selamat tinggal kepada teman."
+      }
+    ]
+  }
+}

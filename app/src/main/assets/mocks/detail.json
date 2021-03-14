@@ -1,0 +1,57 @@
+{
+  "status": 200,
+  "message": "success",
+  "validation": {},
+  "data": {
+    "id": "5fb3e69c2db9214fe0e9aa22",
+    "company": {
+      "id": "5fad2ff6d9c15a03ece5272a",
+      "name": "PT YTC",
+      "description": "yureka dev",
+      "email": "admin@ytc.co.id",
+      "image": "",
+      "phone_number": "+629042142144"
+    },
+    "instruction": {
+      "text": "",
+      "with_media": false,
+      "media": {}
+    },
+    "type": "single_choice",
+    "point": 0,
+    "timer": {
+      "active": true,
+      "duration": 20,
+      "start_trigger": "after_media"
+    },
+    "question": {
+      "text": "berapa hasil 1+2?",
+      "with_media": true,
+      "media": {
+        "id": "5fb3e65be7b9baa1982a064e",
+        "title": "Audio Speaking",
+        "caption": "speaking",
+        "description": "speaking audio description",
+        "type": "audio",
+        "public_url": "https://storage.googleapis.com/yec-cdn/audios/awesome%20audio.mp3"
+      }
+    },
+    "options": [
+      "1",
+      "4",
+      "3",
+      "4"
+    ],
+    "upload_settings": {},
+    "correct_answer": [
+      "9"
+    ],
+    "explaination": {
+      "text": "",
+      "with_media": false,
+      "media": {}
+    },
+    "created_at": "2020-11-17T15:05:00.246Z",
+    "updated_at": "2020-11-17T15:05:00.246Z"
+  }
+}

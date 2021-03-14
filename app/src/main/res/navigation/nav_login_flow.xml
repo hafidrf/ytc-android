@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login_flow"
+    app:startDestination="@id/signInFragment">
+
+        <fragment
+            android:id="@+id/signInFragment"
+            android:name="com.yureka.technology.ytc.ui.auth.login.SignInFragment"
+            android:label="Masuk"
+            tools:layout="@layout/layout_sign_in_v2">
+            <action
+                android:id="@+id/action_signInFragment_to_forgotPasswordFragment"
+                app:destination="@id/forgotPasswordFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/forgotPasswordFragment"
+            android:name="com.yureka.technology.ytc.ui.profile.forgotpassword.ForgotPasswordFragment"
+            android:label="Lupa Password"
+            tools:layout="@layout/layout_forgot_password">
+            <action
+                android:id="@+id/action_forgotPasswordFragment_to_verificationFragment"
+                app:destination="@id/verificationFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/verificationFragment"
+            android:name="com.yureka.technology.ytc.ui.profile.forgotpassword.VerificationFragment"
+            android:label="Verifikasi Berhasil"
+            tools:layout="@layout/layout_success_verified">
+            <action
+                android:id="@+id/action_verificationFragment_to_resetPasswordFragment"
+                app:destination="@id/resetPasswordFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/resetPasswordFragment"
+            android:name="com.yureka.technology.ytc.ui.profile.forgotpassword.ResetPasswordFragment"
+            android:label="Reset Password"
+            tools:layout="@layout/layout_reset_password">
+            <action
+                android:id="@+id/action_resetPasswordFragment_to_aturUlangPasswordFragment"
+                app:destination="@id/aturUlangPasswordFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/aturUlangPasswordFragment"
+            android:name="com.yureka.technology.ytc.ui.profile.forgotpassword.AturUlangPasswordFragment"
+            android:label="Atur Ulang Password"
+            tools:layout="@layout/layout_atur_ulang_kata_sandi">
+            <action
+                android:id="@+id/action_aturUlangPasswordFragment_to_passwordTerbaruiFragment"
+                app:destination="@id/passwordTerbaruiFragment"
+                app:popUpToInclusive="false" />
+        </fragment>
+        <fragment
+            android:id="@+id/passwordTerbaruiFragment"
+            android:name="com.yureka.technology.ytc.ui.profile.forgotpassword.PasswordTerbaruiFragment"
+            android:label="Password Terbarui"
+            tools:layout="@layout/layout_kata_sandi_terbarui">
+            <action
+                android:id="@+id/action_passwordTerbaruiFragment_to_signInFragment"
+                app:destination="@id/signInFragment"
+                app:launchSingleTop="true"
+                app:popUpTo="@id/signInFragment"
+                app:popUpToInclusive="true" />
+        </fragment>
+</navigation>

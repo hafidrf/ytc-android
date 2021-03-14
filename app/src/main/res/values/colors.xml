@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Material theme colors. See following for more definitions.
+        * https://github.com/material-components/material-components-android/blob/master/docs/theming/Color.md
+    -->
+
+    <!-- Application Colors -->
+    <color name="colorPrimary">#F05326</color>
+    <color name="colorPrimaryDark">#D03A0E</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimaryVariant">#4E0D3A</color>
+    <color name="colorSecondary">#E30425</color>
+    <color name="colorSurface">#FFFBFA</color>
+    <color name="colorError">#EF9A43</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorOnSurface">#442B2D</color>
+    <color name="colorOnError">#FFFBFA</color>
+    <color name="colorOnBackground">#442B2D</color>
+
+    <!-- Home Screen -->
+    <color name="home_string">#3C4858</color>
+    <color name="home_decs_string">#8492A6</color>
+    <color name="home_rounded">#E0E6ED</color>
+    <color name="home_slider">#F1F7FF</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="colorSnow">#F9FAFC</color>
+    <color name="colorSilver">#8492A6</color>
+
+    <!-- Practice 2 -->
+    <color name="colorgreyPractice2">#C0CCDA</color>
+    <color name="colorStrokePractice2">#E0E6ED</color>
+
+    <color name="colorWrong">#FFBEB9</color>
+    <color name="colorCorrect">#B9FFBD</color>
+    <color name="colorTextWrong">#B64949</color>
+    <color name="colorTextCorrect">#54B649</color>
+
+    <color name="colorButtonDisabled">#E5E9F2</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSmoke">#E0E6ED</color>
+    <color name="colorAktivitasIcon">#F1F7FF</color>
+
+    <!-- Account Screen  -->
+    <color name="colorLabelAccount">#3C4858</color>
+    <color name="colorInputAccountPrimary">#8492A6</color>
+    <color name="colorInputAccount">#C0CCDA</color>
+    <color name="colorBackgroundAccount">#F9FAFC</color>
+    <color name="colorBackgroundAccountDanger">#F94343</color>
+
+    <color name="colorGreen">#359B9B</color>
+    <color name="colorGreenLight">#30B5B5</color>
+
+    <color name="colorForgot">#E5E5E5</color>
+
+</resources>

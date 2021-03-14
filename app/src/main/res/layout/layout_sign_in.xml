@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.yureka.technology.ytc.ui.profile.login.SignInViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme"
+                tools:ignore="MissingConstraints">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:theme="@style/ToolbarColoredBackArrow"
+                    app:titleTextColor="@color/colorOnPrimary">
+
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_signIn_decs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorSnow"
+                android:orientation="vertical"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@id/appbar">
+
+                <TextView
+                    android:id="@+id/tv_label_signIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.1"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5sp"
+                    android:text="@string/tv_label_signIn"
+                    android:textColor="@color/colorLabelAccount"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_email_signIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/ll_name_edit">
+
+                    <TextView
+                        android:id="@+id/tv_label_email_signIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="5sp"
+                        android:text="@string/tv_signIn_email"
+                        android:textColor="@color/colorLabelAccount"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ed_email_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/rounded_sign_in_error"
+                        android:drawableRight="@drawable/ic_wrong_input"
+                        android:hint="@string/ed_signIn_email"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_label_notValid_email_signIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="5sp"
+                        android:text="@string/tv_signIn_notValid_email"
+                        android:textColor="@color/colorBackgroundAccountDanger"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_password_signIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/ll_email_signIn">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tv_label_password_signIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="5sp"
+                            android:text="@string/tv_signIn_password"
+                            android:textColor="@color/colorLabelAccount"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_label_lupa_password_signIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:gravity="right"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="5sp"
+                            android:text="@string/tv_signIn_lupaPassword"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/ed_password_signIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/rounded_sign_in"
+                        android:inputType="textPassword"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp" />
+                    <TextView
+                        android:id="@+id/tv_label_notValid_kata_sandi_signIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="5sp"
+                        android:text="@string/tv_signIn_notValid_kata_sandi"
+                        android:textColor="@color/colorBackgroundAccountDanger"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0.5"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_selanjutnya_signIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/colorButtonDisabled"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="2dp">
+
+
+                        <ProgressBar
+                            android:id="@+id/loading"
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_selanjutnya_signIn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="@string/tv_signIn_selanjutnya"
+                            android:textAlignment="center"
+                            android:textColor="@color/exo_gray"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

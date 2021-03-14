@@ -1,0 +1,53 @@
+{
+  "status": 200,
+  "message": "success",
+  "validation": {},
+  "data": {
+    "activities": [
+      {
+        "id": "5fad450743f5774511111111",
+        "title": "1. Kosakata",
+        "desc": "Melatih kosakata barumu dengan gambar.",
+        "image": "ic_aktivitas_books",
+        "questions": [
+          "5fb3e69c2db9214fe0e9aa22",
+          "5fb63a7a61505d865d8bbf1d",
+          "ccccccccc"
+        ]
+      },
+      {
+        "id": "5fad450743f5774511111112",
+        "title": "2. Mendengarkan",
+        "desc": "Memilih kata yang kamu dengar.",
+        "image": "ic_aktivitas_bicycle",
+        "questions": [
+          "5fb3e69c2db9214fe0e9aa22",
+          "5fb63a7a61505d865d8bbf1d",
+          "ccccccccc"
+        ]
+      },
+      {
+        "id": "5fad450743f5774511111113",
+        "title": "3. Menyusun Kata",
+        "desc": "Menyusun kata dengan tepat.",
+        "image": "ic_aktivitas_lamp",
+        "questions": [
+          "5fb3e69c2db9214fe0e9aa22",
+          "5fb63a7a61505d865d8bbf1d",
+          "ccccccccc"
+        ]
+      },
+      {
+        "id": "5fad450743f5774511111114",
+        "title": "4. Merekam Suara",
+        "desc": "Menjawab soal dengan suara.",
+        "image": "ic_aktivitas_microphone",
+        "questions": [
+          "5fb3e69c2db9214fe0e9aa22",
+          "5fb63a7a61505d865d8bbf1d",
+          "ccccccccc"
+        ]
+      }
+    ]
+  }
+}

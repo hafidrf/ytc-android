@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_practice">
+
+    <!--<action
+        android:id="@+id/action_global_practice1"
+        app:destination="@id/practice1Activity"
+        app:launchSingleTop="false"
+        app:popUpTo="@+id/nav_practice"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/practiceFragment"
+        android:name="com.yureka.technology.ytc.ui.beranda.materi.practice.fragment.PracticeFragment"
+        android:label="PracticeFragment"
+        tools:layout="@layout/base_practice_fragment">
+        <argument
+            android:name="practiceType"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/practice1Activity"
+        android:name="com.yureka.technology.ytc.ui.beranda.materi.practice1.Practice1Fragment"
+        android:label="Practice1Activity"
+        tools:layout="@layout/fragment_practice1"/>-->
+
+</navigation>

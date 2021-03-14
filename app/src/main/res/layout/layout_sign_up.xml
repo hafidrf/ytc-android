@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.yureka.technology.ytc.ui.profile.registration.SignUpViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.profile.registration.SignUpActivity">
+
+        <LinearLayout
+            android:id="@+id/ll_sign_up_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme"
+                tools:ignore="MissingConstraints">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:theme="@style/ToolbarColoredBackArrow"
+                    app:titleTextColor="@color/colorOnPrimary">
+
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sign_up_profile_decs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorSnow"
+                android:orientation="vertical"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@id/appbar">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_label_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.05"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5sp"
+                    android:text="Lengkapi data dirimu di bawah ini"
+                    android:textColor="@color/colorLabelAccount"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_name_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/tv_label_sign_up">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_name_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="5sp"
+                        android:text="@string/tv_edit_profile_name"
+                        android:textColor="@color/colorLabelAccount"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ed_name_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/rounded_edit_profile"
+                        android:hint="@string/ed_edit_profile_name"
+                        android:textColor="@color/colorInputAccountPrimary"
+                        android:textColorHint="@color/colorInputAccount"
+                        android:inputType="text"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_notValid_signUp_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:paddingHorizontal="15dp"
+                        android:text="@string/tv_signUp_notValid_nama"
+                        android:textColor="@color/colorBackgroundAccountDanger"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_email_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_email_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="5sp"
+                        android:text="@string/tv_edit_profile_email"
+                        android:textColor="@color/colorLabelAccount"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ed_email_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/rounded_edit_profile"
+                        android:hint="@string/ed_edit_profile_email"
+                        android:textColor="@color/colorInputAccountPrimary"
+                        android:textColorHint="@color/colorInputAccount"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_notValid_signUp_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:paddingHorizontal="15dp"
+                        android:text="@string/tv_signUp_notValid_email"
+                        android:textColor="@color/colorBackgroundAccountDanger"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_password_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_password_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="5sp"
+                        android:text="@string/tv_edit_profile_password"
+                        android:textColor="@color/colorLabelAccount"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ed_password_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/rounded_edit_profile"
+                        android:inputType="textPassword"
+                        android:textColor="@color/colorInputAccountPrimary"
+                        android:textColorHint="@color/colorInputAccount"
+                        android:hint="min, 6 karakter"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_notValid_signUp_kata_sandi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:paddingHorizontal="15dp"
+                        android:text="@string/tv_signUp_notValid_kata_sandi"
+                        android:textColor="@color/colorBackgroundAccountDanger"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_phone_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_phone_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="5sp"
+                        android:text="@string/tv_edit_profile_phone"
+                        android:textColor="@color/colorLabelAccount"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ed_phone_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/rounded_edit_profile"
+                        android:hint="@string/ed_edit_profile_phone"
+                        android:textColor="@color/colorInputAccountPrimary"
+                        android:textColorHint="@color/colorInputAccount"
+                        android:inputType="phone"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_notValid_signUp_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:paddingHorizontal="15dp"
+                        android:text="@string/tv_signUp_notValid_phone"
+                        android:textColor="@color/colorBackgroundAccountDanger"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_usia_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_usia_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="5sp"
+                        android:text="@string/tv_edit_profile_usia"
+                        android:textColor="@color/colorLabelAccount"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ed_usia_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/rounded_edit_profile"
+                        android:hint="6"
+                        android:textColor="@color/colorInputAccountPrimary"
+                        android:textColorHint="@color/colorInputAccount"
+                        android:inputType="number"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_notValid_signUp_usia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:paddingHorizontal="15dp"
+                        android:text="@string/tv_signUp_notValid_phone"
+                        android:textColor="@color/colorBackgroundAccountDanger"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0.35"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_save_sign_up"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:src="@drawable/ic_button_selanjutnya"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_save_sign_up_disable"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_button_selanjutnya_disable"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

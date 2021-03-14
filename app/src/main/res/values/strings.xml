@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">YTC</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_dashboard">Peringkat</string>
+    <string name="title_notifications">Avatar</string>
+    <string name="title_profil">Profil</string>
+    <string name="title_feature_x">Feature X Title</string>
+    <string name="title_feature_y">Feature Y Title</string>
+    <string name="title_feature_z">Feature Z Title</string>
+    <string name="home_hello">Hello</string>
+    <string name="home_decs_top_head">Mau belajar apa hari ini?</string>
+    <string name="eringga_saputra">Eringga Saputra</string>
+    <string name="langganan_sekarang">Langganan sekarang</string>
+    <string name="langganan_content">Yuk langganan sekarang agar kamu bisa akses materi selanjutnya</string>
+    <string-array name="on_boarding_titles">
+        <item>Minggu 1</item>
+        <item>Minggu 2</item>
+        <item>Minggu 3</item>
+    </string-array>
+    <string-array name="on_boarding_texts">
+        <item>Two (1) line dolor urna tempus malesuada cras sit in</item>
+        <item>Two (2) line dolor urna tempus malesuada cras sit in</item>
+        <item>Two (3) line dolor urna tempus malesuada cras sit in</item>
+    </string-array>
+    <string name="practice_section_x">Ucapkan kalimat berikut ini</string>
+    <string name="label_soal">What is your favorite meal?</string>
+    <string name="prompt_speech">Ketuk untuk memulai</string>
+    <string name="image_placeholder">image_loading</string>
+    <string name="practice_section_y">Susun kalimat berikut ini</string>
+    <string name="practice_section_1">Pilihlah gambar yang tepat di bawah ini</string>
+    <string name="mulai">Mulai</string>
+    <string name="rank">Peringkat</string>
+    <string name="term">Kebijakan Privasi</string>
+    <string name="faq">FAQ</string>
+    <string name="name_sample">Eringga Saputra</string>
+    <string name="count_sample">1290</string>
+    <string name="images_desc">images</string>
+    <string name="logout">Keluar</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="register_msg">Masuk atau daftar untuk melanjutkan keseruan belajar</string>
+    <string name="title_activity_practice2">Practice 2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="practice2_title">Kata apa yang kamu dengar?</string>
+    <string name="pratice2_label_sound">Ketuk untuk mendengarkan</string>
+    <string name="tv_edit_profile_name">Nama lengkap</string>
+    <string name="ed_edit_profile_name">Eringga Saputra</string>
+    <string name="tv_edit_profile_email">Email</string>
+    <string name="ed_edit_profile_email">eringga@mail.com</string>
+    <string name="tv_edit_profile_password">Kata sandi</string>
+    <string name="tv_edit_profile_phone">Nomor telepon</string>
+    <string name="tv_edit_profile_usia">Usia</string>
+    <string name="ed_edit_profile_phone">087855679980</string>
+    <string name="tv_edit_profile_save">Simpan</string>
+    <string name="tv_signIn_selanjutnya">Selanjutnya</string>
+    <string name="tv_signIn_email">Email</string>
+    <string name="ed_signIn_email">eringga@mail.com</string>
+    <string name="tv_label_signIn"><![CDATA[Masukan email & kata sandi untuk masuk ke akun anda]]></string>
+    <string name="tv_signIn_notValid_email">Alamat email tidak valid / kosong!</string>
+    <string name="tv_signIn_notValid_kata_sandi">kata sandi kosong!</string>
+    <string name="tv_signIn_lupaPassword">Lupa password?</string>
+    <string name="tv_signIn_password">Kata sandi</string>
+
+    <string name="tv_signUp_notValid_nama">Nama tidak valid / kosong!</string>
+    <string name="tv_signUp_notValid_email">Alamat email tidak valid / kosong!</string>
+    <string name="tv_signUp_notValid_kata_sandi">Kata sandi tidak valid / kosong!</string>
+    <string name="tv_signUp_notValid_phone">Phone tidak valid / kosong!</string>
+    <string name="tv_signUp_notValid_usia">Usia tidak valid / kosong!</string>
+
+
+    <string name="awesome">Awesome!</string>
+    <string name="sorry">Sorry!</string>
+    <string name="retake">Retake</string>
+    <string name="cek">Cek</string>
+
+    <string name="image_label">Image</string>
+    <string name="selamat">Selamat!</string>
+    <string name="prompt_point">kamu dapat 250 point</string>
+    <string name="prompt_congratulation_msg">Kumpulkan poin sebanyak - banyaknya dan dapatkan karakter favoritmu</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="title_activity_sign_up">Registrasi</string>
+
+    <string name="tv_label_forgot_password">Masukan email anda dan kami akan mengirimkan link untuk memperbarui password anda</string>
+    <string name="tv_label_atur_password">Masukan kata sandi baru kamu, kata sandi harus mengandung min. 7 karakter dan 1 angka</string>
+    <string name="tv_forgot_email">Email</string>
+    <string name="ed_forgot_email">eringga@mail.com</string>
+    <string name="tv_signIn_notValid_forgot">Alamat email tidak valid / kosong!</string>
+    <string name="tv_label_reset_password">Permohonan memperbarui password telah dibuat. Jika anda yang membuat permohonan ini, harap klik tombol di bawah ini</string>
+    <string name="aktivitas">Aktivitas</string>
+    <string name="label_notValid_signUp_password">Kata sandi minimal 6 karakter</string>
+    <string name="unlock">Unlock all practice</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="prompt_coming_soon_avatar">Avatar still coming soon</string>
+</resources>

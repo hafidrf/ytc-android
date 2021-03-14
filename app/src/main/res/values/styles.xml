@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--
+        Use the new material theme for automatic material theme look and feel.
+        See following for guidelines:
+        * https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md
+        * https://github.com/material-components/material-components-android/blob/master/docs/theming.md
+    -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorOnError">@color/colorOnError</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+    </style>
+
+    <style name="AppThemeNew" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorOnError">@color/colorOnError</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+
+        <item name="android:textViewStyle">@style/NunitoTextStyle</item>
+        <item name="android:buttonStyle">@style/NunitoButtonStyle</item>
+    </style>
+
+    <style name="NunitoTextStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/nunito_regular</item>
+    </style>
+
+    <style name="NunitoButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="fontFamily">@font/nunito_regular</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.ToolbarFont" parent="AppTheme">
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_weight">700</item>
+        <item name="android:textColorSecondary">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:textViewStyle">@style/NunitoTextStyle</item>
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+        <item name="android:buttonStyle">@style/NunitoButtonStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="checkedIconEnabled">false</item>
+        <item name="checkedIcon">@null</item>
+    </style>
+
+    <style name="AppThemeNew.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeNew.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppThemeNew.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ExoCustomTheme">
+        <item name="materialButtonStyle">@style/ExoButtonStyle</item>
+    </style>
+
+    <style name="ExoButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetBottom">0dp</item>
+        <item name="backgroundTint">@color/colorWhite</item>
+    </style>
+
+    <style name="CustomDialogFragmentStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name = "android:windowBackground" > @android:color/transparent</item>
+    </style>
+
+    <style name="PracticeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textViewStyle">@style/NunitoTextStyle</item>
+    </style>
+
+    <style name="ButtonCustomTheme">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_state_selector</item>
+        <item name="android:textViewStyle">@style/NunitoTextStyle</item>
+    </style>
+</resources>

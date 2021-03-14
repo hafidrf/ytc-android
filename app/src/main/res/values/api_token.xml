@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="my_google_api_access_key" translatable="false">AIzaSyBc-etc4uQbrMIAJVNF7h-RuvT-IIgr_S0</string>
+    <string name="facebook_app_id">168459218309929</string>
+    <string name="fb_login_protocol_scheme">168459218309929</string>
+
+</resources>
